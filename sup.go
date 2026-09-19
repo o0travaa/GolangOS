@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"GolangOS/commands"
+	"fmt"
+)
 
 func shellSup() string {
 	var shell string
@@ -30,6 +33,6 @@ func shellSup() string {
 		fmt.Println("Error")
 		return shellSup()
 	}
-	sysClear()
+	commands.SysClear()
 	return shell
 }

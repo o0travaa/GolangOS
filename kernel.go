@@ -3,21 +3,7 @@ package main
 import (
 	"GolangOS/commands"
 	"fmt"
-	"os"
-	"os/exec"
-	"runtime"
 )
-
-func sysClear() {
-	var cmd *exec.Cmd
-	if runtime.GOOS == "windows" {
-		cmd = exec.Command("cmd", "/c", "cls")
-	} else {
-		cmd = exec.Command("clear")
-	}
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-}
 
 func main() {
 	shell := shellSup()
@@ -33,7 +19,7 @@ func main() {
 			fmt.Println("Shutting down...")
 			return
 		case "clear", "c":
-			sysClear()
+			commands.SysClear()
 		case "echo":
 			fmt.Println(flags)
 		default:
