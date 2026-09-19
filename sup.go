@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func ShellSup() string {
+func shellSup() string {
 	var shell string
 
 	shell1 := "sh > "
@@ -28,7 +28,7 @@ func ShellSup() string {
 		shell = shell3
 	default:
 		fmt.Println("Error")
-		return ShellSup()
+		return shellSup()
 	}
 	sysClear()
 	return shell

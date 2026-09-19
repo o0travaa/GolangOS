@@ -20,7 +20,7 @@ func sysClear() {
 }
 
 func main() {
-	shell := ShellSup()
+	shell := shellSup()
 	var input string
 	var flags string
 	for {
