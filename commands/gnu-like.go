@@ -12,6 +12,7 @@ func Help() {
 	fmt.Println("help/h - show avialable commands")
 	fmt.Println("shutdown/sd/exit - shut down GolangOS")
 	fmt.Println("clear/c - clear the terminal")
+	fmt.Println("echo - output a string (echo Hello! -> Hello!)")
 }
 
 func SysClear() {
