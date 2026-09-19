@@ -13,4 +13,4 @@ This is a beta test of my upcoming large-scale project of the same name.
 ```bash
 git clone https://github.com/o0travaa/GolangOS.git
 cd GolangOS
-go run kernel.go
+go run .
