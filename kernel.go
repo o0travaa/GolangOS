@@ -11,7 +11,7 @@ func main() {
 	var input string
 	var flags string
 	for {
-		fmt.Printf("%s | %s", userName, shell)
+		fmt.Printf("%s@%s", userName, shell)
 		fmt.Scanf("%s %s\n", &input, &flags)
 		switch input {
 		case "help", "h":
