@@ -4,6 +4,7 @@ import "fmt"
 
 func Help() {
 	fmt.Println("Avialable commands:")
-	fmt.Println("help - show avialable commands")
-	fmt.Println("shutdown/sd - power off GolangOS")
+	fmt.Println("help/h - show avialable commands")
+	fmt.Println("shutdown/sd/exit - shut down GolangOS")
+	fmt.Println("clear/c - clear the terminal")
 }

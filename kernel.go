@@ -8,7 +8,7 @@ import (
 	"runtime"
 )
 
-func CallClear() {
+func sysClear() {
 	var cmd *exec.Cmd
 	if runtime.GOOS == "windows" {
 		cmd = exec.Command("cmd", "/c", "cls")
@@ -47,19 +47,27 @@ func shellSup() string {
 		fmt.Println("Error")
 		return shellSup()
 	}
-	CallClear()
+	sysClear()
 	return shell
 }
 
 func main() {
 	shell := shellSup()
 	var input string
+	var flags string
 	for {
 		fmt.Print(shell)
-		fmt.Scanln(&input)
+		fmt.Scanf("%s %s\n", &input, &flags)
 		switch input {
-		case "help":
+		case "help", "h":
 			commands.Help()
+		case "sd", "shutdown", "exit":
+			fmt.Println("Shutting down...")
+			return
+		case "clear", "c":
+			sysClear()
+		default:
+			fmt.Println("Error: Command not found")
 		}
 	}
 }
