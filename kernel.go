@@ -7,10 +7,11 @@ import (
 
 func main() {
 	shell := shellSup()
+	userName := user()
 	var input string
 	var flags string
 	for {
-		fmt.Print(shell)
+		fmt.Printf("%s | %s", userName, shell)
 		fmt.Scanf("%s %s\n", &input, &flags)
 		switch input {
 		case "help", "h":

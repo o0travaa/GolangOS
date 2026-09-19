@@ -36,3 +36,14 @@ func shellSup() string {
 	commands.SysClear()
 	return shell
 }
+
+func user() string {
+	var userName string
+	fmt.Println("Setting up your system:")
+	fmt.Println("User")
+	fmt.Print("Enter a name of user: ")
+	fmt.Scanln(&userName)
+	fmt.Println("Successfully!")
+	commands.SysClear()
+	return userName
+}
