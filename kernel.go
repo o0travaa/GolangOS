@@ -1,6 +1,7 @@
 package main
 
 import (
+	"GolangOS/commands"
 	"fmt"
 	"os"
 	"os/exec"
@@ -56,5 +57,9 @@ func main() {
 	for {
 		fmt.Print(shell)
 		fmt.Scanln(&input)
+		switch input {
+		case "help":
+			commands.Help()
+		}
 	}
 }
