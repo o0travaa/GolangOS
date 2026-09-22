@@ -13,6 +13,7 @@ func Help() {
 	fmt.Println("shutdown/sd/exit - shut down GolangOS")
 	fmt.Println("clear/c - clear the terminal")
 	fmt.Println("echo - output a string (echo Hello! -> Hello!)")
+	fmt.Println("fetch - ASCII art \"GolangOS\"")
 }
 
 func SysClear() {

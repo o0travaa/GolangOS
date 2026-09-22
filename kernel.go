@@ -23,6 +23,8 @@ func main() {
 			commands.SysClear()
 		case "echo":
 			fmt.Println(flags)
+		case "fetch":
+			commands.Fetch()
 		default:
 			fmt.Println("Error: Command not found")
 		}
