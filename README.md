@@ -17,12 +17,6 @@ cd GolangOS
 go install .
 ```
 
-or
-
-```bash
-go install github.com/o0travaa/GolangOS@latest
-```
-
 ### 2) Add to PATH (choose your shell)
 
 **For Bash** (Default in Ubuntu/Debian):
