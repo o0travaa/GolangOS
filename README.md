@@ -27,12 +27,12 @@ go install github.com/o0travaa/GolangOS@latest
 
 **For Bash** (Default in Ubuntu/Debian):
 ```bash
-echo 'export PATH=PATH:HOME/go/bin' >> ~/.bashrc && source ~/.bashrc
+echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.bashrc && source ~/.bashrc
 ```
 
 **For Zsh** (Default in macOS/Arch with OhMyZsh):
 ```bash
-echo 'export PATH=PATH:HOME/go/bin' >> ~/.zshrc && source ~/.zshrc
+echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.zshrc && source ~/.zshrc
 ```
 
 **For Fish**:
