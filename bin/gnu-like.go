@@ -14,6 +14,7 @@ func Help() {
 	fmt.Println("clear/c - clear the terminal")
 	fmt.Println("echo - output a string (echo Hello! -> Hello!)")
 	fmt.Println("fetch - ASCII art \"GolangOS\"")
+	fmt.Println("about - system info")
 }
 
 func SysClear() {
