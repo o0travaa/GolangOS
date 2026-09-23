@@ -1,13 +1,13 @@
-package main
+package bin
 
 import (
-	"GolangOS/commands"
 	"fmt"
 )
 
-func shellSup() string {
-	var shell string
+var UserName string
+var Shell string
 
+func ShellSup() string {
 	shell1 := "sh > "
 	shell2 := "[shell]$ > "
 	shell3 := "sh ~> "
@@ -24,26 +24,25 @@ func shellSup() string {
 	fmt.Scanln(&shInput)
 	switch shInput {
 	case 1:
-		shell = shell1
+		Shell = shell1
 	case 2:
-		shell = shell2
+		Shell = shell2
 	case 3:
-		shell = shell3
+		Shell = shell3
 	default:
 		fmt.Println("Error")
-		return shellSup()
+		return ShellSup()
 	}
-	commands.SysClear()
-	return shell
+	SysClear()
+	return Shell
 }
 
-func user() string {
-	var userName string
+func User() string {
 	fmt.Println("Setting up your system:")
 	fmt.Println("User")
 	fmt.Print("Enter a name of user: ")
-	fmt.Scanln(&userName)
+	fmt.Scanln(&UserName)
 	fmt.Println("Successfully!")
-	commands.SysClear()
-	return userName
+	SysClear()
+	return UserName
 }
