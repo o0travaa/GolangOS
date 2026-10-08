@@ -1,9 +1,7 @@
 # GolangOS
 ## Hi everyone!
 
-This is my first big project. I'm 14 yo and my dream is to become a good programmer. I hope you enjoy it ^^
-
-This is a beta test of my upcoming large-scale project of the same name.
+This is my first big project. I hope you enjoy it ^^
 
 ## First step: [Install Go](https://go.dev/doc/install)
 
